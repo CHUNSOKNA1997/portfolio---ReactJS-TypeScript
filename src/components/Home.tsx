@@ -66,11 +66,10 @@ export function Home() {
             transition={{ delay: 0.5 }}
             className="text-gray-400 leading-relaxed text-[18.5px]"
           >
-            Welcome to my portfolio! I am embarking on my journey as a Web
-            Developer with 6 months of experience creating responsive and
-            user-friendly web interfaces. I am passionate about designing
-            seamless user experiences and dedicated to continuously enhancing my
-            skills to deliver impactful digital solutions.
+            Welcome to my portfolio, where I am embarking on my journey as a Web
+            Developer. I am passionate about designing seamless user experiences
+            and dedicated to continuously enhancing my skills to deliver
+            impactful digital solutions.
           </motion.p>
           <motion.div variants={textAnimation} transition={{ delay: 0.6 }}>
             <motion.a
