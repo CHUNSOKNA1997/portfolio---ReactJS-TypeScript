@@ -6,16 +6,6 @@ export function Home() {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
-
-  const floatingAnimation = {
-    y: [0, -10, 0],
-    transition: {
-      duration: 5,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    },
-  };
-
   return (
     <motion.div
       initial="hidden"
@@ -90,7 +80,7 @@ export function Home() {
               className="inline-block px-6 py-3 border-2 border-[#64ffda] text-[#64ffda] 
                 hover:bg-[#64ffda]/10 transition-colors duration-200 rounded"
             >
-              Let's talk
+              Get in Touch
             </motion.a>
           </motion.div>
         </div>
