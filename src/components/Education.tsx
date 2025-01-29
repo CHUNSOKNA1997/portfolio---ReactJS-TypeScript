@@ -1,20 +1,7 @@
 import { motion } from 'framer-motion';
+import { education } from '../data/education';
+
 export function Education() {
-  const education = [
-    {
-      degree: 'Master of Science in Computer Science',
-      school: 'Stanford University',
-      period: '2019 - 2021',
-      description:
-        'Specialized in Artificial Intelligence and Machine Learning',
-    },
-    {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'MIT',
-      period: '2015 - 2019',
-      description: 'Focus on Software Engineering and Web Development',
-    },
-  ];
   const container = {
     hidden: {
       opacity: 0,
@@ -95,7 +82,6 @@ export function Education() {
               <div className="text-[#64ffda] font-mono">{edu.period}</div>
               <h3 className="text-xl font-bold text-gray-100">{edu.degree}</h3>
               <div className="text-gray-400">{edu.school}</div>
-              <p className="text-gray-400">{edu.description}</p>
             </div>
           </motion.div>
         ))}

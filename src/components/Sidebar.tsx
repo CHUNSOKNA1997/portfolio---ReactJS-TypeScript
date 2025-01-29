@@ -41,7 +41,7 @@ export function Sidebar() {
       >
         <div className="h-full flex flex-col">
           <div className="mb-8">
-            <h1 className="text-2xl font-bold text-[#64ffda]">Portfolio</h1>
+            <h1 className="text-2xl font-bold text-[#64ffda]">SOKNA CS.</h1>
           </div>
           <nav className="flex-1">
             <ul className="space-y-4">
