@@ -1,22 +1,18 @@
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
 export function Contact() {
   const socialIcons = [
     {
-      icon: <Mail size={24} />,
-      href: 'mailto:hello@example.com',
-    },
-    {
       icon: <Github size={24} />,
-      href: 'https://github.com',
+      href: 'https://github.com/CHUNSOKNA1997',
     },
     {
       icon: <Linkedin size={24} />,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/chun-sokna-449bba32b/',
     },
     {
-      icon: <Twitter size={24} />,
-      href: 'https://twitter.com',
+      icon: <Facebook size={24} />,
+      href: 'https://www.facebook.com/sokna.chun.1997',
     },
   ];
   return (
@@ -87,7 +83,7 @@ export function Contact() {
           whileTap={{
             scale: 0.95,
           }}
-          href="mailto:hello@example.com"
+          href="mailto:chun.sokna.1222@gmail.com"
           className="inline-block px-6 py-3 border-2 border-[#64ffda] text-[#64ffda] 
                    hover:bg-[#64ffda]/10 transition-colors duration-200 rounded"
         >

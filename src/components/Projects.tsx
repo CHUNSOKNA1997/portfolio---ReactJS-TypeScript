@@ -1,26 +1,9 @@
 import { Github, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { projects } from '../data/projects';
+
+
 export function Projects() {
-  const projects = [
-    {
-      title: 'Project One',
-      description:
-        'A web application built with React and Node.js that helps users track their daily tasks and manage their time effectively.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
-      github: 'https://github.com',
-      live: 'https://example.com',
-    },
-    {
-      title: 'Project Two',
-      description:
-        'An e-commerce platform with real-time inventory management and secure payment processing.',
-      tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
-      github: 'https://github.com',
-      live: 'https://example.com',
-    },
-  ];
   const container = {
     hidden: {
       opacity: 0,
@@ -82,7 +65,6 @@ export function Projects() {
                 alt={project.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-[#0a192f]/80"></div>
             </div>
             <div className="p-4 sm:p-6 space-y-4">
               <h3 className="text-xl font-bold text-gray-100">
