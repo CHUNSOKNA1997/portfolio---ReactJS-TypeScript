@@ -66,16 +66,6 @@ export function Sidebar() {
               ))}
             </ul>
           </nav>
-          <div className="mt-auto pt-6">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-[#64ffda] transition-colors duration-200"
-            >
-              GitHub
-            </a>
-          </div>
         </div>
       </aside>
     </>
