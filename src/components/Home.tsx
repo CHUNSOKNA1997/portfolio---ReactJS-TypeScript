@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { skills } from '../data/skills';
+import { Download } from 'lucide-react';
 
 export function Home() {
   const textAnimation = {
@@ -75,11 +76,12 @@ export function Home() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#contact"
-              className="inline-block px-6 py-3 border-2 border-[#64ffda] text-[#64ffda] 
-                hover:bg-[#64ffda]/10 transition-colors duration-200 rounded"
+              href="https://drive.google.com/file/d/1KEqmj3DhwkG2OcIA5fbeOhUjWLBMla9l/view?usp=drive_link"
+              className="flex px-6 py-3 border-2 border-[#64ffda] text-[#64ffda] 
+                hover:bg-[#64ffda]/10 transition-colors duration-200 rounded items-center justify-center w-55 gap-2"
             >
-              Get in Touch
+              <Download size={20} />
+              Download my CV
             </motion.a>
           </motion.div>
         </div>
