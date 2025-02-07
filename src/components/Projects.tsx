@@ -1,7 +1,6 @@
-import { Github, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
-
 
 export function Projects() {
   const container = {
@@ -57,13 +56,13 @@ export function Projects() {
             whileHover={{
               y: -8,
             }}
-            className="bg-[#112240] rounded-lg overflow-hidden"
+            className="bg-[#112240] rounded-lg overflow-hidden outline-[#64ffda] outline-1"
           >
             <div className="relative h-48 sm:h-56">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div className="p-4 sm:p-6 space-y-4">
@@ -97,20 +96,6 @@ export function Projects() {
                   className="text-gray-400 hover:text-[#64ffda] transition-colors duration-200"
                 >
                   <Github size={20} />
-                </motion.a>
-                <motion.a
-                  whileHover={{
-                    scale: 1.1,
-                  }}
-                  whileTap={{
-                    scale: 0.9,
-                  }}
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#64ffda] transition-colors duration-200"
-                >
-                  <ExternalLink size={20} />
                 </motion.a>
               </div>
             </div>

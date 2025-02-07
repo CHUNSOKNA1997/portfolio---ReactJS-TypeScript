@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, FolderKanban, GraduationCap, Mail, Menu, X } from 'lucide-react';
+
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
@@ -34,7 +35,7 @@ export function Sidebar() {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
       <aside
-        className={`fixed md:static w-[240px] h-screen bg-[#112240] p-6 S
+        className={`fixed md:static w-[240px] h-[150vh] bg-[#112240] p-6 S
                    transform transition-transform duration-200 ease-in-out z-40
                    ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
                    md:translate-x-0`}

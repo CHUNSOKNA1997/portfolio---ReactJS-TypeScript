@@ -1,5 +1,6 @@
 import { Github, Linkedin, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
+
 export function Contact() {
   const socialIcons = [
     {
@@ -45,7 +46,7 @@ export function Contact() {
         }}
         className="text-3xl font-bold text-gray-100 mb-8"
       >
-        Get In Touch
+        Let's Talk Together
       </motion.h2>
       <div className="space-y-6">
         <motion.p
@@ -87,7 +88,7 @@ export function Contact() {
           className="inline-block px-6 py-3 border-2 border-[#64ffda] text-[#64ffda] 
                    hover:bg-[#64ffda]/10 transition-colors duration-200 rounded"
         >
-          Let's talk
+          Email Me
         </motion.a>
         <motion.div
           initial={{
@@ -115,8 +116,8 @@ export function Contact() {
                   scale: 0.9,
                 }}
                 href={social.href}
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="text-gray-400 hover:text-[#64ffda] transition-colors duration-200"
               >
                 {social.icon}
